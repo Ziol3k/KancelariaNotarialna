@@ -52,19 +52,19 @@ footer {
 }
 
 
-
 .header-top {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-  background-color: #f8f8f8;
-  border-bottom: 1px solid #ddd;
+  background-color: #960000;
+  border-bottom: 1px solid #000000;
 }
 
 .contact-info, .address {
   display: flex;
   flex-direction: column;
+  color: #cccccc;
 }
 
 .logo {
