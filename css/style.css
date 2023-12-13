@@ -29,26 +29,17 @@ header {
 }
 
 .services {
+  width: 20%;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   padding: 20px;
+  flex-direction: column;
 }
 
 .service {
   background-color: white;
   border: 1px solid #ccc;
   padding: 10px;
-}
-
-footer {
-  background-color: #333;
-  color: white;
-  text-align: center;
-  padding: 10px;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
 }
 
 
@@ -61,11 +52,17 @@ footer {
   border-bottom: 1px solid #000000;
 }
 
-.contact-info, .address {
+.contact-tel1,.contact-tel2, .contact-email, .address {
   display: flex;
-  flex-direction: column;
-  color: #cccccc;
+  justify-content: space-evenly; /* Równomierne rozmieszczenie elementów */
+  align-items: center;
+  flex: 1; /* Zapewnia, że oba kontenery zajmują równą przestrzeń */
+  color: #ffffff;
+  margin: 0 10px;
 }
+
+
+
 
 .logo {
   text-align: center;
@@ -73,6 +70,13 @@ footer {
 
 .logo img {
   max-height: 60px; /* Adjust as per your logo's dimensions */
+}
+
+.header-nav {
+  position: sticky;
+  top: 0; /* Ustawia 'nav' na samej górze strony */
+  background-color: inherit; /* Możesz ustawić konkretny kolor tła, jeśli jest to potrzebne */
+  z-index: 1000; /* Upewnia się, że 'nav' pozostaje na wierzchu innych elementów */
 }
 
 .header-nav ul {
@@ -92,6 +96,16 @@ footer {
   font-weight: bold;
 }
 
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
 .footer-content {
   text-align: center;
   padding: 20px 0;
@@ -107,3 +121,5 @@ footer {
 .footer-content a:hover {
   text-decoration: underline;
 }
+
+
