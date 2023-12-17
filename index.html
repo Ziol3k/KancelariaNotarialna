@@ -1,70 +1,137 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Notary Office</title>
+  <title>Kancelaria Notarialna</title>
   <link rel="stylesheet" href="css/style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
 
-<header>
-  <div class="header-top">
-    <a class="contact-tel" href="tel:+48153223232">15 322 32 32</a>
-    <a class="contact-tel" href="tel:+48666777888">666 777 888</a>
-    <a class="contact-email" href="biuro@notariusz,pl">biuro@notariusz.pl</a>
-    <span class="address">Ul. Misia Gogo, Plac Targowy nr 8, 00-123 Lublin</span>
-  </div>
-  <nav class="header-nav">
-    <ul>
-      <img>
-      <li><a href="#home">KANCELARIA</a></li>
-      <li><a href="#services">CZYNNOŚCI NOTARIALNE</a></li>
-      <li><a href="#documents">WYMAGANE DOKUMENTY</a></li>
-      <li><a href="#fees">OPŁATY</a></li>
-      <li><a href="#blog">BLOG</a></li>
-      <li><a href="#contact">KONTAKT</a></li>
-    </ul>
-  </nav>
-</header>
-
 <body>
-<main class="main">
-  <section class="notary-introduction">
-    <div class="notary-info">
-      <h1>Kancelaria notarialna | Targówek, lublin</h1>
-      <p>Treść opisująca kancelarię i oferowane usługi.</p>
-    </div>
-    <div class="notary-image">
-      <!-- Image of notary here if needed -->
-    </div>
-  </section>
+  <header>
+    <div class="header-top">
+      <!-- Logo, informacje kontaktowe itp. -->
+      <div class = header-content-logo>
+        <img src="/img/logo.png" alt="notariusz-logo">
+        <div class = header-content-logo-text>
+          <h1>TWOJA NAZWA</h1>
+          <h2>Kancelaria Notarialna</h2>
+        </div>
+      </div>
 
-  <section class="services">
-    <article class="service">
-      <h2>Darowizny</h2>
-      <p>Informacje o usługach dotyczących darowizn.
-        [32] Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit, amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt, ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit, qui in ea voluptate velit esse, quam nihil molestiae consequatur, vel illum, qui dolorem eum fugiat, quo voluptas nulla pariatur?</p>
-    </article>
-    <article class="service">
-      <h2>Sprzedaż</h2>
-      <p>Informacje o usługach dotyczących sprzedaży.
-      [32] Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit, amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt, ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit, qui in ea voluptate velit esse, quam nihil molestiae consequatur, vel illum, qui dolorem eum fugiat, quo voluptas nulla pariatur?</p>
-    </article>
-    <article class="service">
-      <h2>Spadki/Testamenty</h2>
-      <p>Informacje o usługach dotyczących spadków i testamentów.
-      [32] Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit, amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt, ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit, qui in ea voluptate velit esse, quam nihil molestiae consequatur, vel illum, qui dolorem eum fugiat, quo voluptas nulla pariatur?</p>
-    </article>
-    <!-- More services -->
-  </section>
-</main>
+      <div class="header-content-tel">
+        <img src="img/tel-icon.png">
+        <div class="header-content-tel-text">
+          <p>Zadzwoń do nas</p>
+          <a href="tel:+48123456789">+48 123 456 789</a>
+        </div>
+      </div>
 
-<footer>
-  <div class="footer-content">
-    <p>© 2023 Kancelaria Notarialna. Wszelkie prawa zastrzeżone.</p>
-    <p>Projekt i realizacja: <a href="https://github.com/Ziol3k">Jan Zioło</a></p>
-  </div>
-</footer>
+      <div class="header-content-mail">
+        <img src="img/email-icon.png">
+        <div class="header-content-mail-text">
+          <p>Napisz do nas</p>
+          <a href="mailto:kontakt@notariusz.pl">kontakt@notariusz.pl</a>
+        </div>
+      </div>
+    </div>
+
+      <nav class="navbar">
+        <ul>
+          <li><a href="index.html">Strona główna</a></li>
+          <li><a href="czynnosci-notarialne.html">Czynności Notarialne</a></li>
+          <li><a href="taksy.html">Taksy</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+          <li><a href="o-nas.html">O nas</a></li>
+        </ul>
+      </nav>
+  </header>
+
+  <main>
+    <div class="first-info">
+      <div class="first-info-content">
+          <h2>Kancelaria Notarialna</h2>
+          <h1>Nazwa Kancelarii</h1>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+          <a href="o-nas.html" class="button-link">Więcej</a>
+      </div>
+    </div>
+
+
+    <div class="contact">
+      <div class="contact-col1">
+        <h2>Kontakt</h2>
+        <h1>Darmowa Konsultacja?</h1>
+        <p>Zachęcamy do kontaktu w przypadku jakichkolwiek pytań, a jeden z naszych przyjaznych pracowników skontaktuje się z Tobą tak szybko, jak to możliwe, jesteśmy tutaj, aby Ci pomóc!</p>
+        <div class="contact-col1-telemail">
+          <div class="contact-col1-telemail-tel">
+            <img src="img/tel-icon-white.png">
+            <a href="tel:+48123456789">+48 123 456 789</a>
+          </div>
+          <div class="contact-col1-telemail-email">
+            <img src="img/email-icon-white.png">
+            <a href="mailto:kontakt@notariusz.pl">kontakt@notariusz.pl</a>
+          </div>
+        </div>
+        <div class="contact-col1-address">
+          <img src="img/pin.png">
+          <a>Ul. Misia Gogo, Plac Targowy nr 8, 00-123 Lublin</a>
+        </div>
+      </div>
+      <div class="contact-col2">
+        <form action="/submit-form" method="post">
+          <input type="text" id="name" name="name" placeholder="Imię" required>
+
+          <input type="tel" id="phone" name="phone" placeholder="Telefon" required>
+
+          <input type="email" id="email" name="email" placeholder="Email" required>
+
+          <textarea id="message" name="message" placeholder="Treść wiadomości" required></textarea>
+
+          <div>
+            <input type="checkbox" id="consent" name="consent" required>
+            <label for="consent">Wyrażam zgodę na przetwarzanie moich danych osobowych w celach realizacji przesłanego zgłoszenia oraz zgodnie z polityką prywatności.</label>
+          </div>
+
+          <button type="submit">Wyślij</button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-col1">
+      <img src="img/logo.png" alt="Logo" class="footer-logo">
+      <div class="footer-col-info">
+        <h1>TWOJA NAZWA</h1>
+        <h2>Kancelaria Notarialna</h2>
+      </div>
+    </div>
+    <div class="footer-col">
+      <ul class="footer-links">
+        <li><a href="index.html">Strona główna</a></li>
+        <li><a href="o-nas.html">O nas</a></li>
+        <li><a href="uslugi.html">Usługi</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <div class="footer-contact">
+        <div class="contact-item">
+          <img src="img/tel-icon-white.png" alt="Telefon">
+          <span>+48 123 456 789</span>
+        </div>
+        <div class="contact-item">
+          <img src="img/email-icon-white.png" alt="Email">
+          <span>kontakt@notariusz.pl</span>
+        </div>
+        <div class="contact-item">
+          <img src="img/pin.png" alt="address">
+          <span>Ul. Misia Gogo, Plac Targowy nr 8, 00-123 Lublin</span>
+        </div>
+      </div>
+    </div>
+  </footer>
 
 
 </body>

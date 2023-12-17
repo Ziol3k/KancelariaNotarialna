@@ -1,135 +1,308 @@
-/* Basic Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
+  margin: 0;
   font-family: 'Arial', sans-serif;
 }
 
 header {
-  display: inline;
+ display: inline;
 }
-.main {
-  max-width: 1440px;
-  margin: 0 auto;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.29);
-}
-.notary-introduction {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px;
-  background-color: #f1f1f1;
-
-}
-
-.notary-info {
-  width: 60%;
-}
-
-.notary-image {
-  width: 40%;
-}
-
-.services {
-  width: 20%;
-  display: grid;
-  gap: 20px;
-  padding: 20px;
-  flex-direction: column;
-}
-
-.service {
-  background-color: white;
-  border: 1px solid #ccc;
-  padding: 10px;
-}
-
 
 .header-top {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  padding: 10px;
-  background-color: #960000;
-  border-bottom: 1px solid #000000;
 }
 
-.contact-tel1,.contact-tel2, .contact-email, .address {
+header img{
+  height: 100px;
+  width: auto;
+}
+
+.header-content-logo, .header-content-tel, .header-content-mail{
   display: flex;
-  justify-content: space-evenly; /* Równomierne rozmieszczenie elementów */
   align-items: center;
-  flex: 1; /* Zapewnia, że oba kontenery zajmują równą przestrzeń */
-  color: #ffffff;
-  margin: 0 10px;
+  max-width: 33%;
 }
 
 
 
-
-.logo {
-  text-align: center;
+.header-content-logo-text, .header-content-tel-text, .header-content-mail-text{
+  display: block;
 }
 
-.logo img {
-  max-height: 60px; /* Adjust as per your logo's dimensions */
-}
-
-.header-nav {
-  position: sticky;
-  top: 0; /* Ustawia 'nav' na samej górze strony */
-  background-color: inherit; /* Możesz ustawić konkretny kolor tła, jeśli jest to potrzebne */
-  z-index: 1000; /* Upewnia się, że 'nav' pozostaje na wierzchu innych elementów */
-  max-width: 1440px;
-  margin: 0 auto;
-  background-color: #555555;
-}
-
-.header-nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  padding: 10px 0;
-}
-
-.header-nav ul li {
-  margin: 0 15px;
-}
-
-.header-nav ul li a {
+.header-content-tel-text a, .header-content-mail-text a {
   text-decoration: none;
-  color: #333;
+  color: #000000; /* Ustaw kolor tekstu linków */
+}
+
+.navbar {
+  max-width: 100%;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0f3764;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar ul {
+  list-style-type: none; /* Usuwa domyślne punktory */
+  margin: 0;
+  padding: 0;
+  display: flex; /* Ustawia elementy listy w rzędzie */
+}
+
+.navbar ul li {
+  margin: 0 10px; /* Dodaje odstępy między linkami */
+}
+
+.navbar ul li a {
+  text-decoration: none; /* Usuwa podkreślenie z linków */
+  color: #ffffff; /* Ustaw kolor tekstu linków */
+  font-size: 20px;
   font-weight: bold;
 }
 
-footer {
-  background-color: #333;
-  color: white;
-  text-align: center;
-  padding: 10px;
+.navbar ul li a:hover {
+  color: #ab8249; /* Kolor linków przy najechaniu myszką */
+}
+
+
+.first-info {
   position: relative;
+  height: 500px;
+  background-image: url("../img/duzyHeader.png");
+  background-size: cover; /* Zapewnia, że obraz tła pokryje cały element */
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* Kluczowa właściwość do efektu paralaksy */
+  background-position: center;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+
+
+.first-info::before {
+  content: ''; /* Wymagane dla pseudo-elementów */
+  position: absolute; /* Pozycjonowanie względem kontenera .first-info */
+  top: 0;
+  left: 0;
+  right: 0;
   bottom: 0;
-  width: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Czarna, półprzezroczysta nakładka */
+  z-index: 1; /* Ustawienie pod zawartością .first-info */
 }
 
-.footer-content {
-  text-align: center;
-  padding: 20px 0;
-  background-color: #333;
+.first-info > * {
+  position: relative;
+  z-index: 2; /* Upewnia się, że treść jest na wierzchu */
+}
+
+.first-info-content {
+  max-width: 400px;
+  padding: 10px;
+  margin-left: 150px;
   color: white;
+
 }
 
-.footer-content a {
-  color: #ffffff;
+.button-link {
+  display: inline-block; /* Umożliwia ustawienie paddingów i innych właściwości blokowych */
+  background-color: #0f3764; /* Kolor tła przycisku */
+  color: white; /* Kolor tekstu */
+  padding: 10px 20px; /* Wewnętrzne odstępy */
+  text-align: center; /* Wyrównanie tekstu */
+  text-decoration: none; /* Usuwa podkreślenie */
+  font-weight: bold; /* Pogrubienie tekstu */
+  border-radius: 5px; /* Zaokrąglenie rogów */
+  transition: background-color 0.3s; /* Animacja zmiany koloru tła */
+}
+
+.button-link:hover {
+  background-color: #13284b; /* Ciemniejszy kolor tła przy najechaniu */
+}
+
+
+
+
+
+
+.contact {
+  position: relative;
+  height: 700px;
+  background-image: url("../img/background2.png");
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  margin: 30px 0;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Dwie kolumny o równej szerokości */
+  gap: 20px; /* Opcjonalnie, dodaje przestrzeń między kolumnami */
+}
+
+.contact::before {
+  content: ''; /* Wymagane dla pseudo-elementów */
+  position: absolute; /* Pozycjonowanie względem kontenera .first-info */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Czarna, półprzezroczysta nakładka */
+  z-index: 1; /* Ustawienie pod zawartością .first-info */
+}
+
+.contact > * {
+  position: relative;
+  z-index: 2; /* Upewnia się, że treść jest na wierzchu */
+}
+
+
+.contact img {
+  width: 80px;
+  height: auto;
+}
+
+.contact-col1, .contact-col2 {
+  color: white;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-col1 {
+  margin-right: 10%;
+  margin-left: 20%;
+}
+
+.contact-col2 {
+  margin-right: 20%;
+  margin-left: 10%;
+}
+
+.contact-col1 h1, .contact-col1 h2, .contact-col1 p{
+  margin-right: auto;
+  margin-left: 20%;
+}
+
+.contact-col1-telemail{
+  display: flex;
+}
+
+.contact-col1-telemail-tel, .contact-col1-telemail-email, .contact-col1-address{
+  display: flex;
+  align-items: center;
+
+}
+
+.contact-col1-telemail a {
+  text-decoration: none; /* Usuwa podkreślenie z linków */
+  color: #ffffff; /* Ustaw kolor tekstu linków */
+}
+
+.contact-col2 form{
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  color: black;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px
+
+}
+
+.contact-col2 form input[type="text"],
+.contact-col2 form input[type="tel"],
+.contact-col2 form input[type="email"],
+.contact-col2 form textarea {
+  margin-bottom: 15px; /* Dodaje odstęp między elementami */
+  width: 100%; /* Zapewnia, że każdy element rozciąga się na całą dostępną szerokość */
+}
+
+.contact-col2 form textarea {
+  resize: none;
+  height: 100px;
+}
+
+
+.contact-col2 form button{
+  display: inline-block; /* Umożliwia ustawienie paddingów i innych właściwości blokowych */
+  background-color: #0f3764; /* Kolor tła przycisku */
+  color: white; /* Kolor tekstu */
+  margin-top: 20px;
+  width: 100px;
+
+  padding: 10px 20px; /* Wewnętrzne odstępy */
+  text-align: center; /* Wyrównanie tekstu */
+  text-decoration: none; /* Usuwa podkreślenie */
+  font-weight: bold; /* Pogrubienie tekstu */
+  border-radius: 5px; /* Zaokrąglenie rogów */
+  transition: background-color 0.3s; /* Animacja zmiany koloru tła */
+}
+
+
+
+
+
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  background-color: #333; /* Przykładowy kolor tła */
+  color: white; /* Przykładowy kolor tekstu */
+}
+
+.footer-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-col1 {
+  display: flex;
+}
+
+.footer-col-info{
+  display: block;
+  margin-left: 20px;
+}
+
+.footer-links {
+  list-style-type: none;
+  padding: 0;
+
+}
+
+.footer-links li {
+  margin-bottom: 40px;
+}
+
+.footer-links li a {
+  color: white;
   text-decoration: none;
 }
 
-.footer-content a:hover {
-  text-decoration: underline;
+
+
+.footer-contact .contact-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
 }
 
+.footer-contact .contact-item img {
+  margin-right: 10px;
+}
+
+footer img {
+  width: 100px;
+  height: 100px;
+}
+
+/* Dodaj odpowiednie style dla logo i innych elementów w stopce */
 
