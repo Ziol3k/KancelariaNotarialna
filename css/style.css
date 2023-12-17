@@ -134,7 +134,7 @@ header img{
   position: relative;
   height: 700px;
   background-image: url("../img/background2.png");
-  background-size: auto;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 
