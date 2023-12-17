@@ -137,7 +137,7 @@ header img{
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-
+  background-attachment: fixed; /* Kluczowa właściwość do efektu paralaksy */
   margin: 30px 0;
 
   display: grid;
